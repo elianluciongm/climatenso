@@ -119,6 +119,7 @@
 
         var res = await fetch(apiUrl)
             .then((resposta) => { return resposta.json(); });
+        console.log(res);
 
         if (res.cod === 200) {
             var dados = {
